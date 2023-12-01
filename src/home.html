@@ -2,80 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="css/style-g.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay loop muted>
+    <div class="video-container-hom">
+        <header class="header-hom">
+    
+            <nav class="nav-hom">
+              <img src="images/log.png" alt="logo here" class="logo1-hom">
+              <img src="images/menu-icon.png" alt="Menu" class="menu-icon-hom">
+              <div class="nav-links-hom">
+                <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about-me.html">ABOUT ME</a></li>
+                  <li><a href="hobbies.html">HOBBIES</a></li>
+                  <li><a href="interests.html">INTERESTS</a></li>
+                  <li><a href="inspirations.html">INSPIRATIONS</a></li>
+                  
+                 
+                 
+                
+                </ul>
+              </div>
+            </nav>
+          </header>
+       
+   
+        <video autoplay loop muted class="background-hom">
             <source src="images/fire.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <header>
-            <div >
-                <div>
-                    <img src="images/log.png" alt="logo here">
-                </div>
-                <nav class="navbar">
-                    <a href="home.html">Home</a>
-                    <a href="about-me.html">About Me</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="inspirations.html">Inspirations</a>
-                </nav>
-            </div>
-        </header>
+   
         <main>
-            <div class="content">
+            <div class="content-hom">
                 <h1>Welcome to my website</h1>
-                <a href="about-me.html">Explore</a>
+                
             </div>
+            <a href="about-me.html" class="link-button-hom">Explore</a>
             
         </main>
     </div>
-        <footer>
-            <div >
-                <div >
-                    <img src="images/log.png" alt="logo here">
-                    <div>
-                        <p >
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> +251913460116
-                        </p>
-                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
-                    </div>
-                </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="text" placeholder="Your message">
+   
+    <footer class="footer-hom">
+        <div class="footer-columns-hom">
+            <div class="logo-column-hom">
+                <img src="images/log.png" alt="logo here" class="logo-hom">
+                <div class="contact-info-hom">
+                    <p class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:lidiyamkt@gmail.com" class="email1-hom">Email me</a>
+                    </p>
+                    <p class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i> linkedin.com/
+                    </p>
+                    <p class="telegram">
+                        <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+                    </p>
+                    <p class="phonenumber">
+                        <i class="fa-solid fa-phone"></i> +251913460116
+                    </p>
+                    <p class="github"> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
+                   
                 </div>
             </div>
-            <div>
-                &copy; 2023 LMK.com. All Rights Reserved.
+            <div class="sitemap-column-hom">
+                <h2>Site Map</h2>
+                <ul class="site-map-hom">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="inspirations.html">Inspirations</a></li>
+                </ul>
             </div>
-        </footer>
- 
+            <div class="message-column-hom">
+                <h2 class="message">Message Me</h2>
+                <input type="text" placeholder="Your name" class="input-1-hom">
+                <input type="email" placeholder="Your email" class="input-1-hom">
+                <input type="text" placeholder="Your message" class="input-2-hom">
+            </div>
+        </div>
+        <div class="copy-right-hom">
+            &copy; 2023 LMK.com. All Rights Reserved.
+        </div>
+    </footer>
+  
 </body>
 </html>
