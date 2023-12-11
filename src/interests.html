@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Interests Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-    
-        <nav>
-          <img src="images/log.png" alt="logo here" class="logo1">
-          <img src="images/menu-icon.png" alt="Menu" class="menu-icon">
-          <div class="nav-links">
-            <ul>
-              <li><a href="home.html">HOME</a></li>
-              <li><a href="about-me.html">ABOUT ME</a></li>
-              <li><a href="hobbies.html">HOBBIES</a></li>
-              <li><a href="interests.html">INTERESTS</a></li>
-              <li><a href="inspirations.html">INSPIRATIONS</a></li>
-              
-             
-             
-            
-            </ul>
-          </div>
+    <header class="header">
+        <nav class="navigation">
+            <img src="images/log.png" alt="logo here" class="navigation__logo">
+            <img src="images/menu-icon.png" alt="Menu" class="navigation__menu-icon">
+            <div class="navigation__links">
+                <ul class="navigation__links-list">
+                    <li class="navigation__links-item"><a href="home.html" class="navigation__links-link">HOME</a></li>
+                    <li class="navigation__links-item"><a href="about-me.html" class="navigation__links-link">ABOUT ME</a></li>
+                    <li class="navigation__links-item"><a href="hobbies.html" class="navigation__links-link">HOBBIES</a></li>
+                    <li class="navigation__links-item"><a href="interests.html" class="navigation__links-link">INTERESTS</a></li>
+                    <li class="navigation__links-item"><a href="inspirations.html" class="navigation__links-link">INSPIRATIONS</a></li>
+                </ul>
+            </div>
+            <div class="navigation__horizontal">
+                <ul class="navigation__horizontal-list">
+                    <li class="navigation__horizontal-item"><a href="home.html" class="navigation__horizontal-link">HOME</a></li>
+                    <li class="navigation__horizontal-item"><a href="about-me.html" class="navigation__horizontal-link">ABOUT ME</a></li>
+                    <li class="navigation__horizontal-item"><a href="hobbies.html" class="navigation__horizontal-link">HOBBIES</a></li>
+                    <li class="navigation__horizontal-item"><a href="interests.html" class="navigation__horizontal-link">INTERESTS</a></li>
+                    <li class="navigation__horizontal-item"><a href="inspirations.html" class="navigation__horizontal-link">INSPIRATIONS</a></li>
+                </ul>
+            </div>
         </nav>
-      </header>
-        <main>
-          <section class="inter-section-int">
-            <h1 class="myint-title-int">My Interests</h1>
-            <div class="box-6-int">
-                <div class="interest"><img src="images/learning.jpg" alt="machine learning" class="ml-int">
-                    <h3 class="int-desc"> Machine Learning</h3></div>
-                <div class="interest-int">
-                    <img src="images/neuron.jpg" alt="Neuroscience" class="neuro-int">
-                    <h3  class="interest-int"> Neuroscience</h3>
+    </header>
+        <main class="interests">
+
+          <section class="interests__section">
+
+            <h1 class="interests__title">My Interests</h1>
+
+            <div class="interests__box">
+
+                <div class="interests__item"><img src="images/learning.jpg" alt="machine learning" class="interest__image-ml">
+                    <h3 class="interest__description"> Machine Learning</h3></div>
+                <div class="interests__item">
+                    <img src="images/neuron.jpg" alt="Neuroscience" class="interest__image-nero">
+                    <h3  class="interest__description"> Neuroscience</h3>
                 </div>
-                <div class="interest-int">
-                    <img src="images/psych.jpg" alt="Psychology" class="psych-int">
-            <h3 class="int-desc-int"> Cognitive Psychology</h3>
+                <div class="interests__item">
+                    <img src="images/psych.jpg" alt="Psychology" class="interest__image-psych">
+            <h3 class="interest__description"> Cognitive Psychology</h3>
                 </div>
-                <div class="interest-int">
-                    <img src="images/stoicism.jpg" alt="Stoicism" class="stoic-int">
-            <h3 class="int-desc-int">Stoicism </h3> 
+                <div class="interests__item">
+                    <img src="images/stoicism.jpg" alt="Stoicism" class="interest__image-stoic">
+            <h3 class="interest__description">Stoicism </h3> 
                 </div>
             </div>
             
@@ -52,60 +61,93 @@
              
         </section>
 
-    <section class="int1-int">
-        <h2 class="my-interest-int">Machine Learning</h2>
-        <p  class="story-int"> 
-            AI, especially the realm of machine learning, captivates me with its limitless potential to transform our world. Witnessing how AI reshapes industries, from healthcare to finance, fuels my passion to contribute meaningfully in this landscape. For the reader, here is the definition of machine learning and artifical intelligence.</p>
-            <dl  class="story-int">
-                <dt class="emphasis-int"> Machine learning</dt>
-                <dd>Machine learning is a branch of artificial intelligence (AI) that focuses on creating algorithms and systems that enable computers to learn and improve from experience without being explicitly programmed.</dd>
-                <dt class="emphasis-int"> Artifical Intelligence</dt>
-                <dd>
-                  Artificial Intelligence (AI) refers to the simulation of human intelligence in machines designed to think, learn, and perform tasks that typically require human intelligence.</dd>
-            </dl>
-            <p  class="story-int">I am particularly interested in machine learning because it is the most important aspect to determine how an AI system will function</p>
-            <figure>
-                <video src="images/machine.mp4" controls  autoplay loop muted class="machine-vid-int"></video>
-                <figcaption  class="story2-int">
-                    Man teaching a robot to play chess
-                </figcaption>
-            </figure>
+    <section class="interests__section--1">
+       
+        <div class="interests__dual1">
+            <div class="interests__para-container">
+                <h2 class="interests__my-interest">Machine Learning</h2>
+                <p  class="interests__story"> 
+                    AI, especially the realm of machine learning, captivates me with its limitless potential to transform our world. Witnessing how AI reshapes industries, from healthcare to finance, fuels my passion to contribute meaningfully in this landscape. For the reader, here is the definition of machine learning and artifical intelligence.</p>
+                    <dl  class="interests__story">
+                        <dt class="interests__emphasis"> Machine learning</dt>
+                        <dd>Machine learning is a branch of artificial intelligence (AI) that focuses on creating algorithms and systems that enable computers to learn and improve from experience without being explicitly programmed.</dd>
+                        <dt class="interests__emphasis"> Artifical Intelligence</dt>
+                        <dd>
+                          Artificial Intelligence (AI) refers to the simulation of human intelligence in machines designed to think, learn, and perform tasks that typically require human intelligence.</dd>
+                    </dl>
+                    <p  class="interests__story">I am particularly interested in machine learning because it is the most important aspect to determine how an AI system will function</p>
+            </div>
+            <div class="interests__video-container">
+                <figure class="interests__video">
+                    <video src="images/machine.mp4" controls  autoplay loop muted class="interests__machine-video"></video>
+                    <figcaption  class="interests__story2">
+                        Man teaching a robot to play chess
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+      
+           
     </section>
-    <section class="int2-int">
-        <h2 class="my-interest2-int">Neuroscience</h2>
-        <p  class="story-int">After coming across Dr Andrew Huberman I have come to love the world of neuroscience. "Neuroscience" refers to the scientific study of the nervous system, including its structure, function, development, and its relationship to behavior and cognition. It is also heavily intertwined with psychology. Which is another inerest of mine </p>
-        <figure>
-            <video src="images/neuron.mp4"  controls autoplay loop muted class="neuron-vid-int"></video>
-            <figcaption  class="story2-int">
-                Neurons in the brain
-            </figcaption>
-        </figure>
+    <section class="interests2__section--2">
+     
+        <div class="interests2__dual2">
+            <div class="interests__para-container">
+                <h2 class="interests2__my-interest">Neuroscience</h2>
+                <p  class="interests__story">After coming across Dr Andrew Huberman I have come to love the world of neuroscience. "Neuroscience" refers to the scientific study of the nervous system, including its structure, function, development, and its relationship to behavior and cognition. It is also heavily intertwined with psychology. Which is another inerest of mine </p></div>
+            <div class="interests2__video-container">
+                <figure>
+                    <video src="images/neuron.mp4"  controls autoplay loop muted class="interests2__neuron-video"></video>
+                    <figcaption  class="interests__story2">
+                        Neurons in the brain
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+      
+        
        
 
     </section>
-    <section class="int1-int">
-        <h2 class="my-interest-int"> Cognitive Psychology</h2>
-        <p  class="story-int">
-            I have always been good at understanding peoples emotions and the source of their habits. I would like to make a career out of this skill through studying cognitive psychology. Which is a branch of psychology that focuses on studying mental processes such as perception, attention, memory, problem-solving, language, and decision-making. It explores how people acquire, process, store, and use information.
-        </p>
-        <figure>
-            <video src="images/coginition.mp4"  controls autoplay loop muted class="cognition-vid-int"></video>
-            <figcaption  class="story2-int">
-             Phase MRI scan
-            </figcaption>
-        </figure>
+    <section class="interests1__section--1">
+   
+        <div class="interests__dual1"> 
+            <div class="interests__para-container">  
+                <h2 class="interests__my-interest"> Cognitive Psychology</h2>
+                <p  class="interests__story">
+                I have always been good at understanding peoples emotions and the source of their habits. I would like to make a career out of this skill through studying cognitive psychology. Which is a branch of psychology that focuses on studying mental processes such as perception, attention, memory, problem-solving, language, and decision-making. It explores how people acquire, process, store, and use information.
+            </p></div>
+            <div class="interests__video-container">
+                <figure>
+                    <video src="images/coginition.mp4"  controls autoplay loop muted class="interests__cognition-video"></video>
+                    <figcaption class="interests__story2">
+                     Phase MRI scan
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        
     </section>
-    <section class="int2-int">
-    <h2 class="my-interest2-int">Stoicism</h2>
-    <p  class="story-int">Stoicism is an ancient philosophy that originated in ancient Greece, later developed in Rome, and remains influential in modern times. It teaches principles and practices aimed at achieving inner tranquility, resilience, and a virtuous life, regardless of external circumstances. I for one want to achieve those things and reading the works of the stoics has helped me become a better person in addition to my belief in God. I entend to study the works of the stoics intensly in my lifetime.  </p>
+    <section class="interests2__section--2">
+    
+    <div class="interests2__dual2">
+        <div class="interests__para-container">   
+            <h2 class="interests2__my-interest">Stoicism</h2>
+            <p   class="interest2__story">Stoicism is an ancient philosophy that originated in ancient Greece, later developed in Rome, and remains influential in modern times. It teaches principles and practices aimed at achieving inner tranquility, resilience, and a virtuous life, regardless of external circumstances. I for one want to achieve those things and reading the works of the stoics has helped me become a better person in addition to my belief in God. I entend to study the works of the stoics intensly in my lifetime.  </p></div>
 
-
-        <figure>
-            <video src="images/marcus.mp4"  controls autoplay loop muted class="marcus-vid-int"></video>
-            <figcaption  class="story2-int">
-           The statue of the stoic Marcus Aurelius
-            </figcaption>
-        </figure>
+        <div class="interests2__video-container">
+            <figure>
+                <video src="images/marcus.mp4"  controls autoplay loop muted class="interests2__marcus-video"></video>
+                <figcaption class="interests__story2">
+               The statue of the stoic Marcus Aurelius
+                </figcaption>
+            </figure>
+        </div>
+    
+    </div>
+   
+       
     </section>
 
 
@@ -113,48 +155,46 @@
         </main>
  
         <footer class="footer">
-            <div class="footer-columns">
-                <div class="logo-column">
-                    <img src="images/log.png" alt="logo here" class="logo">
-                    <div class="contact-info">
-                        <p class="email">
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
-                        </p>
-                        <p class="linkedin">
-                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
-                        </p>
-                        <p class="telegram">
-                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
-                        </p>
-                        <p class="phonenumber">
-                            <i class="fa-solid fa-phone"></i> +251913460116
-                        </p>
-                        <p class="github"> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
-                    </div>
-                </div>
-                <div class="sitemap-column">
-                    <h2>Site Map</h2>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
-                    </ul>
-                </div>
-                <div class="message-column">
-                    <h2 class="message">Message Me</h2>
-                    <input type="text" placeholder="Your name" class="input-1">
-                    <input type="email" placeholder="Your email" class="input-1">
-                    <input type="text" placeholder="Your message" class="input-2">
-                </div>
-            </div>
-            <div class="copy-right">
-                &copy; 2023 LMK.com. All Rights Reserved.
-            </div>
+          <div class="footer__columns">
+              <div class="footer__logo-column">
+                  <img src="images/log.png" alt="logo here" class="footer__logo">
+                  <div class="footer__contact-info">
+                      <p class="footer__email">
+                          <i class="fa-solid fa-envelope"></i>
+                          <a href="mailto:lidiyamkt@gmail.com" class="footer__email-link">Email me</a>
+                      </p>
+                      <p class="footer__linkedin">
+                          <i class="fa-brands fa-linkedin"></i> linkedin.com/
+                      </p>
+                      <p class="footer__telegram">
+                          <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+                      </p>
+                      <p class="footer__phonenumber">
+                          <i class="fa-solid fa-phone"></i> +251913460116
+                      </p>
+                      <p class="footer__github"> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
+                  </div>
+              </div>
+              <div class="footer__sitemap-column">
+                  <h2 class="footer__sitemap-title">Site Map</h2>
+                  <ul class="footer__site-map">
+                      <li><a href="home.html" class="footer__site-map-link">Home</a></li>
+                      <li><a href="about-me.html" class="footer__site-map-link">About Me</a></li>
+                      <li><a href="hobbies.html" class="footer__site-map-link">Hobbies</a></li>
+                      <li><a href="interests.html" class="footer__site-map-link">Interests</a></li>
+                      <li><a href="inspirations.html" class="footer__site-map-link">Inspirations</a></li>
+                  </ul>
+              </div>
+              <div class="footer__message-column">
+                  <h2 class="footer__message-title">Message Me</h2>
+                  <input type="text" placeholder="Your name" class="footer__input-1">
+                  <input type="email" placeholder="Your email" class="footer__input-1">
+                  <input type="text" placeholder="Your message" class="footer__input-2">
+              </div>
+          </div>
+          <div class="footer__copy-right">
+              &copy; 2023 LMK.com. All Rights Reserved.
+          </div>
         </footer>
- 
-</body>
-</html>
+        </body>
+        </html>
